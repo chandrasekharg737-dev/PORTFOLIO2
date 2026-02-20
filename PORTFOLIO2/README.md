@@ -45,10 +45,7 @@ A modern, dashboard-style portfolio website built with Flask, HTML, CSS, and Jav
 3.  Click **New +** -> **Web Service**.
 4.  Connect your GitHub repository.
 5.  Render will automatically detect the `requirements.txt` and `Procfile`.
-6.  **Add Environment Variable:**
-    -   Key: `GROQ_API_KEY`
-    -   Value: `your_api_key_here`
-7.  Click **Create Web Service**.
+6.  Click **Create Web Service**.
 
 ## Credits
 
