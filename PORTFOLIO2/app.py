@@ -1,13 +1,17 @@
 from flask import Flask, render_template, send_from_directory, request, jsonify
 import os
 from groq import Groq
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
 
 # Configuration
 app.config['RESUME_FILENAME'] = 'G ROSHNI PROFFESIONAL RESUME.pdf'
 app.config['RESUME_PATH'] = os.path.abspath(app.config['RESUME_FILENAME'])
-app.config['GROQ_API_KEY'] = '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'
+app.config['GROQ_API_KEY'] = os.getenv('GROQ_API_KEY')
 
 # Initialize Groq Client
 client = Groq(api_key=app.config['GROQ_API_KEY'])
