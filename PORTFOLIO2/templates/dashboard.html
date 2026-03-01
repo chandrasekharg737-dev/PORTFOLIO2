@@ -1,0 +1,149 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="dashboard-grid">
+    <!-- Welcome Section -->
+    <div class="card welcome-card">
+        <div class="welcome-text">
+            <h1>Hello, I'm <span class="highlight">G Roshni</span></h1>
+            <p>Aspiring Web Developer & B.Tech CSE Student</p>
+            <div class="badges">
+                <span class="badge">Problem Solver</span>
+                <span class="badge">Learner</span>
+                <span class="badge">Developer</span>
+            </div>
+        </div>
+        <div class="welcome-visual">
+            <!-- Abstract geometric shape or illustration via CSS -->
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+        </div>
+    </div>
+
+    <!-- Stats / Quick Info -->
+    <div class="card stat-card">
+        <div class="icon-box"><i class="fas fa-university"></i></div>
+        <div class="stat-info">
+            <h3>2nd Year</h3>
+            <p>NIST University</p>
+        </div>
+    </div>
+    <div class="card stat-card">
+        <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="stat-info">
+            <h3>Odisha</h3>
+            <p>India</p>
+        </div>
+    </div>
+    <div class="card stat-card">
+        <div class="icon-box"><i class="fas fa-phone"></i></div>
+        <div class="stat-info">
+            <h3>Contact</h3>
+            <p>7008098715</p>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="card skills-card" id="skills">
+        <div class="card-header">
+            <h3>Technical Skills</h3>
+            <a href="#" class="more-btn"><i class="fas fa-ellipsis-h"></i></a>
+        </div>
+        <div class="skills-list">
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>Java</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>C Programming</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>Data Structures</span>
+                    <span>70%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span>HTML/CSS</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="card projects-card" id="projects">
+        <div class="card-header">
+            <h3>Projects</h3>
+            <a href="#" class="more-btn"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="project-list">
+            <div class="project-item">
+                <div class="project-icon"><i class="fab fa-java"></i></div>
+                <div class="project-details">
+                    <h4>Java Programs Dev</h4>
+                    <p>Matrix operations, Linear Search, Bubble Sort</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-icon"><i class="fas fa-terminal"></i></div>
+                <div class="project-details">
+                    <h4>Mini Projects</h4>
+                    <p>Array operations, Basic Shell Programs</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-icon"><i class="fas fa-code"></i></div>
+                <div class="project-details">
+                    <h4>Algorithms</h4>
+                    <p>Palindrome & Prime Number Checkers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience / Education -->
+    <div class="card education-card" id="education">
+        <div class="card-header">
+            <h3>Education</h3>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024 - 2028</div>
+                <div class="timeline-content">
+                    <h4>B.Tech - CSE</h4>
+                    <p>NIST University</p>
+                    <small>Currently in 2nd Year</small>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Completed</div>
+                <div class="timeline-content">
+                    <h4>Diploma in Engg</h4>
+                    <p>SMIT Engineering College</p>
+                    <small>First Division</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Mini -->
+    <div class="card contact-card" id="contact">
+        <h3>Get In Touch</h3>
+        <p>Seeking opportunities to enhance technical skills.</p>
+        <a href="mailto:chandrasekharg737@gmail.com" class="btn-primary">Send Email</a>
+    </div>
+</div>
+{% endblock %}
